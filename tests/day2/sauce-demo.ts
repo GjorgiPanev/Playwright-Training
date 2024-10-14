@@ -8,6 +8,8 @@ export class SaucedemoPage {
     readonly username: Locator;
     readonly password: Locator;
     readonly login: Locator;
+    readonly add1: Locator;
+    readonly add2: Locator;
 
 
     constructor(page: Page) {
@@ -15,6 +17,9 @@ export class SaucedemoPage {
         this.username = page.locator(login.username);
         this.password= page.locator(login.password);
         this.login = page.locator(login.loginBtn);
+        this.add1 = page.locator(login.addBackpack);
+        this.add2 = page.locator(login.addBikeLight);
+
       }
 
       async goto() {
@@ -31,7 +36,15 @@ export class SaucedemoPage {
 
       async clickLogin(){
         await this.login.click();
-    }
+      }
+
+      async addBP(){
+        await this.add1.click();
+      }
+      
+      async addBL(){
+        await this.add2.click();
+      }
 
 
 }

@@ -1,5 +1,7 @@
 {
     "username": "[data-test=\"username\"]",
     "password": "[data-test=\"password\"]",
-    "loginBtn": "[data-test=\"login-button\"]"
+    "loginBtn": "[data-test=\"login-button\"]",
+    "addBackpack": "[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+    "addBikeLight": "[data-test=\"add-to-cart-sauce-labs-bike-light\"]"
 }

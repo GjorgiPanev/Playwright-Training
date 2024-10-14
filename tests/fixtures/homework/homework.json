@@ -1,0 +1,10 @@
+{
+    "username": "[data-test=\"username\"]",
+    "password": "[data-test=\"password\"]",
+    "loginBtn": "[data-test=\"login-button\"]",
+    "title": "[data-test=\"title\"]",
+    "add1": "[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+    "add2": "[data-test=\"add-to-cart-sauce-labs-bike-light\"]",
+    "shoppingcart": "[data-test=\"shopping-cart-link\"]'",
+    "remove1": "[data-test=\"remove-sauce-labs-backpack\"]"
+}
