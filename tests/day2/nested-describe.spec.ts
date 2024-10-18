@@ -4,7 +4,7 @@ test.describe("Test Suite for Update User tests", ()=> {
 
 test.describe("Test Suite for Update Username tests", ()=> {
 
-    test('Update username with valid username', async ({ page }) => {
+    test.only('Update username with valid username', async ({ page }) => {
  
     });
 

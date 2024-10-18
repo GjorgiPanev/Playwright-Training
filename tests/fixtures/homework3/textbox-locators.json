@@ -1,0 +1,6 @@
+{
+    "fullnamelocator": "Full Name",
+    "emaillocator": "name@example.com",
+    "currentaddresslocator": "Current Address",
+    "permanentaddresslocator": "#permanentAddress"
+}

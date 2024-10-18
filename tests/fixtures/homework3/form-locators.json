@@ -1,0 +1,13 @@
+{
+    "practiceform": "listitem",
+    "gender": "Male",
+    "mobilenumber": "Mobile Number",
+    "dateofbirth": "#dateOfBirthInput",
+    "day": "Choose Tuesday, April 6th,",
+    "hobbiesS": "Sports",
+    "hobbiesR": "Reading",
+    "hobbiesM": "Music",
+    "pics": "Select picture",
+    "state": "NCR",
+    "city": "Delhi"
+}

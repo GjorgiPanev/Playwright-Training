@@ -1,0 +1,11 @@
+{
+    "fullname": "Gjorgi Panev",
+    "email": "gjorgipanev@example.com",
+    "currentaddress": "Current Address",
+    "permanentaddress": "Permanent Adress",
+    "firstname": "Gjorgi",
+    "lastname": "Panev",
+    "age": "25",
+    "salary": "100",
+    "department": "QA"
+}
