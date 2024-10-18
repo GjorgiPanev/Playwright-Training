@@ -11,6 +11,8 @@ export class ElementsQADemoPage{
     readonly currentAddress: Locator;
     readonly permanentAdress: Locator;
     readonly submitButton: Locator;
+    readonly FullNameValidation: Locator;
+
 
     constructor(page : Page){
         this.page = page;
@@ -21,6 +23,7 @@ export class ElementsQADemoPage{
         this.currentAddress = page.getByPlaceholder(textboxLocators.currentaddresslocator);
         this.permanentAdress = page.locator(textboxLocators.permanentaddresslocator);
         this.submitButton = page.getByRole('button', { name: 'Submit' });
+        this.FullNameValidation = page.getByText("Name:Gjorgi Panev");
     }
 
     async goto() {
@@ -54,6 +57,7 @@ export class ElementsQADemoPage{
     async clickSubmit(){
         await this.submitButton.click();
     }
-
-
+    async ExpectFullName(fullname){
+        await expect(this.FullNameValidation).toContainText(fullname);
+    }
 }

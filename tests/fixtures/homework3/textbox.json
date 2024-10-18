@@ -7,5 +7,9 @@
     "lastname": "Panev",
     "age": "25",
     "salary": "100",
-    "department": "QA"
+    "department": "QA",
+    "expectfullname": "Name:Gjorgi Panev",
+    "expectemail": "Email:gjorgipanev@example.com",
+    "expectcaddress": "Current Address :Current",
+    "expectpaddress": "Permananet Address :Permanent"
 }
