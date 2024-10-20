@@ -6,7 +6,7 @@ const data = JSON.parse(fs.readFileSync('../Playwright-Training/tests/fixtures/h
 
 test.describe("Test Suite for Log in Book Store", ()=> {
 
-    test('Test for Log in and Log out', async ({ page }) => {
+    test('Test for Log in and Log out', {tag: ['@bookstore']},async ({ page }) => {
         const elementsQADemoPage = new ElementsQADemoPage(page);
         const bookstoreQA = new BookStore(page);
         await elementsQADemoPage.goto();
@@ -19,7 +19,7 @@ test.describe("Test Suite for Log in Book Store", ()=> {
         await expect(page.getByRole('heading', { name: 'Login in Book Store' })).toBeVisible();
     });
 
-    test('Test2 for Log in and Log out', async ({ page }) => {
+    test('Test2 for Log in and Log out', {tag: ['@bookstore']},async ({ page }) => {
         const elementsQADemoPage = new ElementsQADemoPage(page);
         const bookstoreQA = new BookStore(page);
         await elementsQADemoPage.goto();

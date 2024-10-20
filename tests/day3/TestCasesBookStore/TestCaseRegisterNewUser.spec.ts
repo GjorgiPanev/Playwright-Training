@@ -7,7 +7,7 @@ const data = JSON.parse(fs.readFileSync('../Playwright-Training/tests/fixtures/h
 
 test.describe("Test Suite for Book Store Application - Register new user", ()=>{
 
-    test('Test case for register new user', async ({ page }) =>{
+    test('Test case for register new user', {tag: ['@bookstore']},async ({ page }) =>{
         const elementsQADemoPage = new ElementsQADemoPage(page);
         const bookstoreQA = new BookStore(page);
         const webelementsQA = new WebTabletPage(page);

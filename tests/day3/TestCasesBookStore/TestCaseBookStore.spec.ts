@@ -6,7 +6,7 @@ const data = JSON.parse(fs.readFileSync('../Playwright-Training/tests/fixtures/h
 
 test.describe("Test Suite BookStore actions", ()=> {
 
-    test('Test E2E example', async ({ page }) => {
+    test('Test E2E example', {tag: ['@bookstore']}, async ({ page }) => {
         const elementsQADemoPage = new ElementsQADemoPage(page);
         const bookstoreQA = new BookStore(page);
         await elementsQADemoPage.goto();
