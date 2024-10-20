@@ -15,7 +15,7 @@ test.describe("Test Suite for Text box", ()=> {
         await elementsQADemoPage.typeCurrentAdress(data.currentaddress);
         await elementsQADemoPage.typePermanentAddress(data.permanentaddress);
         await elementsQADemoPage.clickSubmit();
-        await elementsQADemoPage.ExpectFullName(data.fullName);
+        await elementsQADemoPage.ExpectFullName(data.expectfullname);
         await expect(page.getByText(data.expectemail)).toBeVisible();
         await expect(page.getByText(data.expectcaddress)).toBeVisible();
         await expect(page.getByText(data.expectpaddress)).toBeVisible();
